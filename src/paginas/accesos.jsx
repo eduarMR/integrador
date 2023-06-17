@@ -1,17 +1,16 @@
 import React from 'react';
-import uptapLogo from '../img/uptap.jpg';
 import '../css/opcion.css';
 import '../fontawesome-free-6.3.0-web/css/all.min.css';
-import Nabvar from '../componentes/nabvar';
+import Button from '@mui/material/Button';
+import Footer from '../componentes/footer'
+import BarraAcceso from '../componentes/bar';
 
 function Accesos() {
     return (
         <>
-            <Nabvar />
-            <div className="logo">
-                <img src={uptapLogo} alt="Logo" />
-            </div>
+            <BarraAcceso/>
             <div className="separador" />
+            
             <div className="container">
                 <div className="info">
                     <h1>Universidad Politécnica De Tapachula</h1>
@@ -24,31 +23,27 @@ function Accesos() {
                         <i className="fa-solid fa-user" />
                         <h2>Alumno</h2>
                         <a href="/alumno">
-                            <button>IR</button>
+                            <Button variant="outlined" color='secondary'>IR</Button>
                         </a>
                     </div>
                     <div className="menu-item profesor">
                         <i className="fas fa-chalkboard-teacher" />
                         <h2>Profesor</h2>
                         <a href="/profesor">
-                            <button>IR</button>
+                            <Button variant="outlined" color='secondary'>IR</Button>
                         </a>
                     </div>
                     <div className="menu-item administrativos">
                         <i className="fa-solid fa-shield-halved" />
                         <h2>Administrativos</h2>
                         <a href="/administrativos">
-                            <button>IR</button>
+                            <Button variant="outlined" color='secondary'>IR</Button>
                         </a>
                     </div>
                 </div>
             </div>
-            <footer>
-                <div>
-                    © 2023 Universidad Politécnica de Tapachula
-                    
-                </div>
-            </footer>
+            <div className='separator'></div>
+            <Footer/>
         </>
     );
 }
