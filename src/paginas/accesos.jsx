@@ -4,6 +4,8 @@ import '../fontawesome-free-6.3.0-web/css/all.min.css';
 import Button from '@mui/material/Button';
 import Footer from '../componentes/footer'
 import BarraAcceso from '../componentes/bar';
+import { Link } from "react-router-dom"
+
 
 function Accesos() {
     return (
@@ -21,24 +23,18 @@ function Accesos() {
                 <div className="menu">
                     <div className="menu-item alumno">
                         <i className="fa-solid fa-user" />
-                        <h2>Alumno</h2>
-                        <a href="/alumno">
+                        <h2>Alumno/Profesor</h2>
+                        <Link to="LoginAlumnos">
                             <Button variant="outlined" color='secondary'>IR</Button>
-                        </a>
+                        </Link>
                     </div>
-                    <div className="menu-item profesor">
-                        <i className="fas fa-chalkboard-teacher" />
-                        <h2>Profesor</h2>
-                        <a href="/profesor">
-                            <Button variant="outlined" color='secondary'>IR</Button>
-                        </a>
-                    </div>
+                    
                     <div className="menu-item administrativos">
                         <i className="fa-solid fa-shield-halved" />
                         <h2>Administrativos</h2>
-                        <a href="/administrativos">
+                        <Link to="LoginAdmins">
                             <Button variant="outlined" color='secondary'>IR</Button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

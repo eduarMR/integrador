@@ -1,29 +1,17 @@
 import React from 'react';
-
+import Loading from '../../componentes/buttons/circularColor';
+import NavAlumnos from '../../router/NavAlumnos';
 class ActualizacionDatos extends React.Component {
     render() {
         return (
+            
+            
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a className="navbar-brand" href="#">Credenciales</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav navbar-dark">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="vistaprev.html">Vista previa de credencial</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Actualización de datos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="solicitudrep.html">Módulo de solicitud de reposición de credencial</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                
+                
 
+            <NavAlumnos></NavAlumnos>
+        
                 <div className="container my-5">
                     <h2>Actualización de datos del estudiante</h2>
                     <form>
@@ -57,7 +45,8 @@ class ActualizacionDatos extends React.Component {
                             <label htmlFor="parentesco_contacto">Parentesco:</label>
                             <input type="text" className="form-control" id="parentesco_contacto" placeholder="Ingresa el parentesco del contacto de emergencia" />
                         </div>
-                        <button type="submit" className="btn btn-primary">Actualizar datos</button>
+                        
+                        <Loading><button type="" className="btn btn-primary">Actualizar datos</button></Loading>
                     </form>
                 </div>
 
@@ -80,5 +69,6 @@ class ActualizacionDatos extends React.Component {
         );
     }
 }
+
 
 export default ActualizacionDatos;

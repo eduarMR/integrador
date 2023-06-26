@@ -1,28 +1,11 @@
 import React from 'react';
+import NavAlumnos from '../../router/NavAlumnos';
 
 function Reposicion() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">Credenciales</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav navbar-dark">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="vistaprev.html">Vista previa de credencial</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="actdatos.html">Actualización de datos</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Módulo de solicitud de reposición de credencial</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
 
+        <NavAlumnos></NavAlumnos>
             <div className="container my-4">
                 <h2 className="text-center mb-4">Solicitar reposición de credencial</h2>
                 <div className="row justify-content-center">
@@ -69,6 +52,7 @@ function Reposicion() {
                     </div>
                 </div>
             </footer>
+            
         </>
     );
 }

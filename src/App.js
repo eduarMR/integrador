@@ -1,13 +1,13 @@
 import Accesos from './paginas/accesos'
-import  LoginAlumno  from "./paginas/logins/alumno";
-import AdminGestionUsuarios from "./paginas/vistaAdmin/GestiondeCredenciales";
+import NavAlumnos from './router/NavAlumnos'
 
-  function App() {
-    return (
-      <body>
-        <Accesos/>
-      </body>
-    );
-  }
+function App() {
+  return (
+
+    <>
+      <Accesos />
+    </>
+  );
+}
 
 export default App;

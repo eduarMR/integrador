@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function InicioSesion({ titulo, subtitulo }) {
     return (
         <div>
@@ -14,7 +16,7 @@ function InicioSesion({ titulo, subtitulo }) {
                 <form className="myForm">
                     <input id="matri" type="text" placeholder="Matrícula" required />
                     <input id="contra" type="password" placeholder="Contraseña" required />
-                    <button type="submit">Iniciar sesión</button>
+                    <Link to="VistaPrevia"><button type="submit">Iniciar sesión</button></Link>
                     <p className="message">
                         Recuerda iniciar sesión con tu matrícula proporcionada por la universidad.
                     </p>
